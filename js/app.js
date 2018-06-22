@@ -82,3 +82,22 @@ function noMatch() {  //+ if the cards do not match, remove the cards from the l
     openCards[1].classList.remove('open','show', 'noClick');
     openCards = [];
 }
+
+/* -------------MOVE COUNTER AND STAR RATING -------------*/
+
+function moveCounter() {  //+ increment the move counter and display it on the page
+    moves +=1;
+    moveNumber.textContent = moves + ' Moves';
+    if (moves === 15) {
+        stars.firstElementChild.remove(); // remove one star
+        star--;
+    }
+    if (moves === 25) {
+        stars.firstElementChild.remove();
+        star--;
+    }
+    if (moves === 35) {
+        stars.firstElementChild.remove();
+        star--;
+    }   
+}
