@@ -3,6 +3,24 @@
  */
 
 
+/* ---------  DECLARATIONS   ------------*/
+const moveNumber = document.querySelector('.moves');
+const time = document.querySelector('.timer');
+const stars = document.querySelector('.stars');
+const restartGame = document.querySelector('.restart');
+const reset = document.querySelector('.reset');
+const modalWin = document.querySelector('#winModal');
+const message = document.querySelector('#message');
+
+let openCards = [];
+let matchedCards = [];
+let moves = 0;
+let timing;
+let timestarted = false;
+let second = 0;
+let minute = 0;
+let star = 3;
+
 /*
  * Display the cards on the page
  *   - shuffle the list of cards using the provided "shuffle" method below
@@ -26,7 +44,7 @@ function shuffle(array) {
 }
 
  /* -------------FLIPPING THE CARDS -------------*/
- 
+
 function flipCard() {
     if (!timestarted) { // starting the timer just once and not with every flip
         startTimer(); 
