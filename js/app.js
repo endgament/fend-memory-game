@@ -31,6 +31,25 @@ let star = 3;
  *   - add each card's HTML to the page
  */
 
+ newGame();
+
+function newGame() {
+    let shuffleCards = shuffle(cards); //- shuffle the list of cards using the provided "shuffle" method below
+    deck.innerHtml = "";
+    const fragment = document.createDocumentFragment(); // create document fragment
+    for (let i = 0; i < cards.length; i++) {
+        deck.firstElementChild.remove(); // clear the deck
+        let li = document.createElement('li'); // create list element as child
+        li.classList.add('card');
+        let icon = document.createElement('i'); // create icon element as child of list element
+        icon.classList.add('fa', shuffleCards[i]);
+        li.appendChild(icon);
+        fragment.appendChild(li);
+        li.addEventListener('click', flipCard); // add the event listener on the card
+    } 
+    deck.appendChild(fragment);
+}
+
 // Shuffle function from http://stackoverflow.com/a/2450976
 function shuffle(array) {
     var currentIndex = array.length, temporaryValue, randomIndex;

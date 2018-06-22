@@ -68,7 +68,7 @@ h1 {
 .deck .card.open {
     transform: rotateY(0);
     background: #02b3e4;
-    cursor: default;
+    cursor: pointer;
 }
 
 .deck .card.show {
@@ -76,9 +76,13 @@ h1 {
 }
 
 .deck .card.match {
-    cursor: default;
+    cursor: pointer;
     background: #02ccba;
     font-size: 33px;
+}
+
+.deck .card.noClick{
+  pointer-events: none;
 }
 
 /*
