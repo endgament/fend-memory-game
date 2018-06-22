@@ -120,3 +120,19 @@ function stopTimer() {
     second = 0;
     minute = 0;
 }
+
+/* -------------MODAL -------------*/
+
+function openModal() {
+    myModal.style.display = 'block';  // opne the modal
+    let Modal = document.getElementById('myModal');
+    let message = document.getElementById('message');
+    message.textContent = 'Your time was ' + time.textContent + '.' +
+    'You finished in ' + moveNumber.textContent + ' and with ' + 
+    star + ' stars.';
+    window.onclick = function(event) { // if there is a click outside the modal, the modal window closes
+    if (event.target == modal) {
+        modal.style.display = "none";
+        }
+    }
+}
