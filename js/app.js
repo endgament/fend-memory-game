@@ -143,11 +143,7 @@ function moveCounter() {  //+ increment the move counter and display it on the p
     if (moves === 25) {
         stars.firstElementChild.remove();
         star--;
-    }
-    if (moves === 35) {
-        stars.firstElementChild.remove();
-        star--;
-    }   
+    } 
 }
 
 /* -------------TIMER -------------*/
