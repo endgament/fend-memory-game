@@ -1,7 +1,10 @@
 /*
  * Create a list that holds all of your cards
  */
-
+const deck = document.querySelector('.deck')
+let cardDeck = ['fa-cloud','fa-bug','fa-bolt','fa-fort-awesome',  
+            'fa-pied-piper-alt','fa-snapchat-ghost','fa-twitter','fa-tree'];
+const cards = cardDeck.concat(cardDeck); // so every card is double
 
 /* ---------  DECLARATIONS   ------------*/
 const moveNumber = document.querySelector('.moves');
