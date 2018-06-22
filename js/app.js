@@ -165,3 +165,18 @@ function openModal() {
         }
     }
 }
+
+/* -----------  EVENT LISTENERS  ---------- */
+
+// there is one more event listener inside the newGame function
+
+restartGame.addEventListener('click', function() { //restart game
+    restart();
+    newGame();
+})
+
+reset.addEventListener('click', function() { // reset game
+    myModal.style.display = 'none';
+    restart();
+    newGame();
+})
