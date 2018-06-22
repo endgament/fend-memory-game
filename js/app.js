@@ -72,22 +72,26 @@ function flipCard() {
         startTimer(); 
         timestarted= true;
     }
-    this.classList.toggle('open'); // open the card
-    this.classList.toggle('show'); // show the card's symbol
-    this.classList.toggle('noClick'); // remove the possibility of clicking the same card again
-    openCards.push(this);
 
-    if (openCards.length === 2) { // checking if there are two cards open
-        moveCounter();
-        if (openCards[0].innerHTML === openCards[1].innerHTML) { //+ if the cards do match, lock the cards in the open position (put this functionality in another function that you call from this one)
-            matchCards(openCards[0]);
-            matchCards(openCards[1]);
-            openCards = [];
-        }  
-        else { //+ if the cards do not match, remove the cards from the list and hide the card's symbol (put this functionality in another function that you call from this one)
-            setTimeout(noMatch, 600);
-        }       
+    if (openCards.length < 2) {
+        this.classList.toggle('open'); // open the card
+        this.classList.toggle('show'); // show the card's symbol
+        this.classList.toggle('noClick'); // remove the possibility of clicking the same card again
+        openCards.push(this);
+
+        if (openCards.length === 2) { // checking if there are two cards open
+            moveCounter();
+            if (openCards[0].innerHTML === openCards[1].innerHTML) { //+ if the cards do match, lock the cards in the open position (put this functionality in another function that you call from this one)
+                matchCards(openCards[0]);
+                matchCards(openCards[1]);
+                openCards = [];
+            }  
+            else { //+ if the cards do not match, remove the cards from the list and hide the card's symbol (put this functionality in another function that you call from this one)
+                setTimeout(noMatch, 600);
+            }       
+        }
     }
+        
     gameOver();    
 }
 
