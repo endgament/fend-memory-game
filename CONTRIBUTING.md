@@ -1,3 +1,6 @@
 # How to contribute
 
-The files in this repository are used as the starting point for all students. Because we want students to write the majority of the code themselves, pull requests (most likely) will _not_ be merged into the project.
+For the future I would like to add some more features such as:
+- add CSS animations when cards are clicked, unsuccessfully matched, and successfully matched
+- implement a leaderboard
+- keep a score board

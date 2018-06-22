@@ -1,22 +1,33 @@
 # Memory Game Project
 
-## Table of Contents
 
-* [Instructions](#instructions)
-* [Contributing](#contributing)
-
-## Instructions
+## How to play
 
 The object of the game is to turn over pairs of matching cards. 
 
-Click on any two cards you like and reveal the icons. If it is a match -- well done!! you are one step closer to victory!! If not -- don't worry. You can try again.
+Click on any two cards you like and reveal the icons. If it is a match -- well done!! You are one step closer to victory!! If not -- don't worry. You can try again.
 
 When all the cards are matched, your stats will show up --- moves, time and star rating. 
 
 Play with others and try to be the one with the less moves!
 
-## Contributing
+## Code
 
-This repository is made for the Udacity Front End Web Developer Nanodegree Scholarship.
+The game board consists of sixteen "cards" arranged in a grid. 
+The deck is made up of eight different pairs of cards, each with different symbols on one side. 
+The cards are arranged randomly on the grid with the symbol face down.
+
+Boostrap and font-awesome were used for the cards.
+
+The Modal was taken from https://www.w3schools.com/howto/howto_css_modals.asp.
+
+The Shuffle function was taken from http://stackoverflow.com/a/2450976.
+
+## Licence
+
+©2018 Made by Konstantina Tsarvouli for the Udacity Front-End Web Developer Nanodegree Program
+
+
+## Contributing
 
 For details, check out [CONTRIBUTING.md](CONTRIBUTING.md).
