@@ -7,7 +7,8 @@ The object of the game is to turn over pairs of matching cards.
 
 Click on any two cards you like and reveal the icons. If it is a match -- well done!! You are one step closer to victory!! If not -- don't worry. You can try again.
 
-When all the cards are matched, your stats will show up --- moves, time and star rating. 
+When all the cards are matched, your stats will show up --- moves, time and star rating.
+With your first click, the timer starts! Every two flips is one move --the less, the better! In 15 moves you lose one star, and another one in 25! So try to keep your move counter as down as possible!   
 
 Play with others and try to be the one with the less moves!
 
