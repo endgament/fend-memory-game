@@ -101,3 +101,22 @@ function moveCounter() {  //+ increment the move counter and display it on the p
         star--;
     }   
 }
+
+/* -------------TIMER -------------*/
+
+function startTimer() {
+    timing = setInterval(function() {
+        second ++;
+        if (second % 60 === 0) {
+            second = 0;
+            minute ++; 
+        }
+        time.textContent = minute + ' minutes ' + second + ' seconds '  ;
+    }, 1000)  
+}
+
+function stopTimer() {
+    clearInterval(timing);
+    second = 0;
+    minute = 0;
+}
