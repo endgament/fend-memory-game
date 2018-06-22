@@ -68,3 +68,17 @@ function flipCard() {
     }
     gameOver();    
 }
+
+/* -------------CHECK IF THE CARDS MATCH OR NOT -------------*/
+
+function matchCards(e) {  //+ if the cards do match, lock the cards in the open position
+    e.classList.add('match');
+    e.classList.remove('open','show');
+    matchedCards.push(e);
+}
+
+function noMatch() {  //+ if the cards do not match, remove the cards from the list and hide the card's symbol
+    openCards[0].classList.remove('open','show', 'noClick');
+    openCards[1].classList.remove('open','show', 'noClick');
+    openCards = [];
+}
