@@ -7,14 +7,16 @@
 
 ## Instructions
 
-The starter project has some HTML and CSS styling to display a static version of the Memory Game project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
+The object of the game is to turn over pairs of matching cards. 
 
-To get started, open `js/app.js` and start building out the app's functionality
+Click on any two cards you like and reveal the icons. If it is a match -- well done!! you are one step closer to victory!! If not -- don't worry. You can try again.
 
-For specific, detailed instructions, look at the project instructions in the [Udacity Classroom](https://classroom.udacity.com/me).
+When all the cards are matched, your stats will show up --- moves, time and star rating. 
+
+Play with others and try to be the one with the less moves!
 
 ## Contributing
 
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
+This repository is made for the Udacity Front End Web Developer Nanodegree Scholarship.
 
 For details, check out [CONTRIBUTING.md](CONTRIBUTING.md).
