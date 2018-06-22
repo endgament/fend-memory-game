@@ -83,6 +83,32 @@ function noMatch() {  //+ if the cards do not match, remove the cards from the l
     openCards = [];
 }
 
+/* -------------END AND RESTART THE GAME -------------*/
+
+function gameOver() {
+   if (matchedCards.length === cards.length) { // checking if all the cards are open and matched
+        openModal();
+        stopTimer();
+    }  
+}
+
+function restart() { //restart game 
+    stopTimer();
+    openCards = [];
+    matchedCards = [];
+    moves = 0;
+    moveNumber.textContent = moves + ' Moves';
+    let timing;
+    timestarted = false;
+    second = 0;
+    minute = 0;
+    time.textContent = minute + ' minutes ' + second + ' seconds ';
+    stars.innerHTML = '<li><i class="fa fa-star"></i></li><li><i class="fa fa-star"></i></li><li><i class="fa fa-star"></i></li>';
+    star = 3;
+     
+    newGame();
+}
+
 /* -------------MOVE COUNTER AND STAR RATING -------------*/
 
 function moveCounter() {  //+ increment the move counter and display it on the page
